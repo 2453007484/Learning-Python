@@ -1,7 +1,7 @@
-# Learning-Python
+## Learning-Python
 Personal Python Learning Record
 
-1. CRAPS
+## 1. CRAPS
   The basic flow of a single game is: 
     1. The shooter wagers to pass (win) and then makes an initial come-out roll with two six-sided dice.
         a. If the come-out roll is 7 or 11, that is a natural and the shooter has a pass (wins); the game is over.
@@ -69,4 +69,25 @@ while flag0:
         flag0 = 0
 
 print('你破产了，游戏结束！')
+```
+
+## 2. Is prime
+  Design a function to determine if a given positive integer greater than 1 is not a prime number. 
+  A prime number is a positive integer (greater than 1) that can only be divided evenly by 1 and itself. 
+  If a positive integer N greater than 1 is a prime number, that means there are no factors of it between 2 and N - 1.
+
+```
+
+def is_prime(num:int) -> bool:
+
+    for i in range(2, num - 1):
+        if num % i == 0:
+            return False
+
+    return True
+
+num = int(input('num = '))
+
+print(f'Is prime?\n{is_prime(num)}')
+
 ```
