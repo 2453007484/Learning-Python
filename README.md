@@ -3,13 +3,21 @@ Personal Python Learning Record
 
 ## 1. CRAPS
   The basic flow of a single game is: 
-    1. The shooter wagers to pass (win) and then makes an initial come-out roll with two six-sided dice.
+  
+      1. The shooter wagers to pass (win) and then makes an initial come-out roll with two six-sided dice.
+    
         a. If the come-out roll is 7 or 11, that is a natural and the shooter has a pass (wins); the game is over.
+        
         b. If the come-out roll is 2, 3, or 12, that is a crap and the shooter has a missout (loses); the game is over.
+        
         c. If the come-out roll is any other number (4, 5, 6, 8, 9, or 10), that value becomes the shooter's point.
+        
     2. If a point has been set, the shooter continues to roll until either:
+    
         a. A subsequent roll matches the point and the shooter has a pass (wins); or
+        
         b. A subsequent roll is 7 and the shooter has a missout (loses).
+        
     3. Once a point is set and a missout occurs, the dice are passed to the person on the shooter's left, who becomes the new shooter.
 
 ```
@@ -73,7 +81,9 @@ print('你破产了，游戏结束！')
 
 ## 2. Is prime
   Design a function to determine if a given positive integer greater than 1 is not a prime number. 
+  
   A prime number is a positive integer (greater than 1) that can only be divided evenly by 1 and itself. 
+  
   If a positive integer N greater than 1 is a prime number, that means there are no factors of it between 2 and N - 1.
 
 ```
@@ -93,7 +103,11 @@ print(f'Is prime?\n{is_prime(num)}')
 ```
 
 ## 3. Recoed_down_up
-  The decorator function itself can also be parameterized. In simple terms, decorators can also be customized through the parameters provided by the caller. We will explain this concept to you later when we use it.
+  The decorator function itself can also be parameterized.
+  
+  In simple terms, decorators can also be customized through the parameters provided by the caller. 
+  
+  We will explain this concept to you later when we use it.
 
 ```
 
